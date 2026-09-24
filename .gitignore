@@ -8,3 +8,15 @@ __pycache__/
 chroma_data/
 entrega/*.zip
 .idea/
+storage/
+.env.*
+!.env.example
+*.sqlite
+*.sqlite3
+*.db-journal
+.fastembed_cache/
+fastembed_cache/
+.cache/
+.vscode/
+*.swp
+.DS_Store
