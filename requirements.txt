@@ -2,3 +2,6 @@ fastapi
 uvicorn[standard]
 pydantic-settings
 langchain-google-genai
+fastembed
+chromadb
+slowapi

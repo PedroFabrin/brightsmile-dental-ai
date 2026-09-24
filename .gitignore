@@ -20,3 +20,4 @@ fastembed_cache/
 .vscode/
 *.swp
 .DS_Store
+models/
