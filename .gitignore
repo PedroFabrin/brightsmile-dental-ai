@@ -21,3 +21,7 @@ fastembed_cache/
 *.swp
 .DS_Store
 models/
+
+# Local workflow files (kept on the developer machine only)
+ESCOPO.md
+HORAS.md
