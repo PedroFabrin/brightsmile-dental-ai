@@ -6,21 +6,24 @@
 
 Portfolio project (no external client). The reference document is `CLAUDE.md`.
 
+> Update after Phase 1: hosting moved from Fly.io (mentioned in the original request above) to Hugging Face Spaces, and the default LLM to Gemini free tier, to keep the project at zero cost.
+
 ## Understanding
 
 - Public AI customer-service agent for a fictional dental clinic.
 - RAG over a Markdown knowledge base (`data/`), answers cite their source document.
 - Tools: `check_availability`, `request_appointment`, `handoff_to_human`.
 - FastAPI API with SSE streaming; embeddable chat widget plus a chat page (plain HTML/CSS/JS).
-- Pluggable LLM (Anthropic/OpenAI) and vector store (Chroma/Pinecone) via `.env`.
+- Pluggable LLM (Gemini default, Anthropic, OpenAI) and vector store (Chroma/Pinecone) via `.env`.
 - Evaluation suite (25+ cases, real LLM, outside the default test run) with a hit-rate report.
-- Deploy on Fly.io, with rate limiting.
+- Deploy on Hugging Face Spaces (Docker, free CPU), with rate limiting and graceful handling of LLM usage limits.
+- Zero cost: default LLM is Gemini free tier.
 - Showcase: GitHub, Fiverr, LinkedIn/Instagram.
 
 ## Open questions
 
-- Which Anthropic/OpenAI API key and budget will the public demo use (cost cap)?
-- Fly.io account and app name / region?
+- Gemini free-tier quota is small: is a 429 message ("usage limit reached") acceptable for the public demo? (assumed: yes)
+- Hugging Face account and Space name?
 - Is `check_availability` backed by fake static slots, or a generated schedule? (assumed: fake slots)
 - Public repo name and GitHub account?
 
