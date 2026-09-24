@@ -12,7 +12,7 @@ def test_health_returns_ok():
 
 
 def test_cors_allows_configured_origin_only():
-    allowed = client.get("/health", headers={"Origin": "http://localhost:8000"})
+    allowed = client.get("/health", headers={"Origin": "http://localhost:7860"})
     denied = client.get("/health", headers={"Origin": "http://evil.example"})
-    assert allowed.headers.get("access-control-allow-origin") == "http://localhost:8000"
+    assert allowed.headers.get("access-control-allow-origin") == "http://localhost:7860"
     assert "access-control-allow-origin" not in denied.headers
