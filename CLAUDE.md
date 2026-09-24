@@ -141,4 +141,4 @@ Além do checklist da raiz:
 - GitHub (público): https://github.com/PedroFabrin/brightsmile-dental-ai (branch `main`, remote `origin`).
 - Ao final de cada fase aprovada, fazer push para o GitHub, sempre mostrando antes o que será enviado (commits e arquivos) e esperando o ok do Pedro.
 - Antes de qualquer push: conferir o `.gitignore` e procurar segredos nos arquivos e no histórico, porque o repositório é público.
-- `ESCOPO.md` e `HORAS.md` são arquivos locais de organização: ficam no `.gitignore` e fora do repositório público. Continuam obrigatórios na máquina do Pedro (escopo e registro de horas), mas nunca devem ser commitados.
+- `ESCOPO.md`, `HORAS.md` e `FASE.md` são arquivos locais de organização: ficam no `.gitignore` e fora do repositório público, mas continuam na máquina do Pedro. Nunca devem ser commitados. **No início de cada sessão, ler o `FASE.md`** (onde paramos, o que foi feito e o que falta); ao fim, atualizá-lo.
